@@ -13,7 +13,7 @@
 <h1>Privacy policy</h1>
 <p class="muted">Effective 19 November 2026</p>
 
-<p>8paper is made by DEVELOPER_NAME ("we"). The short version: <strong>your notes stay on your
+<p>8paper is made by Alexandru Dumbrava ("we"). The short version: <strong>your notes stay on your
 device. We have no servers, no accounts, no analytics and no ads, and we do not collect personal
 data.</strong> The rest of this page explains the few cases where the app talks to anyone else.</p>
 
@@ -28,18 +28,24 @@ app or person you pick in Android's share screen.</p>
 your device's backup settings. That backup is handled by Google under
 <a href="https://policies.google.com/privacy">Google's privacy policy</a>; we cannot see it.</p>
 
-<h2>YouTube videos</h2>
-<p>If you paste a YouTube link into a note, the app connects to YouTube to show it:</p>
+<h2>YouTube videos (YouTube API Services)</h2>
+<p>8paper uses <strong>YouTube API Services</strong> to show YouTube videos you paste into a
+note. By using that feature you agree to the
+<a href="https://www.youtube.com/t/terms">YouTube Terms of Service</a>, and Google's handling of
+it is covered by the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.</p>
+<p>The app only contacts YouTube when a note contains a YouTube link. When it does:</p>
 <ul>
-  <li>it downloads the video's preview image from <code>img.youtube.com</code>;</li>
-  <li>for a playlist link, it asks <code>youtube.com</code> for the list of videos in it;</li>
-  <li>when you press play, the video plays in YouTube's privacy-enhanced player
-      (<code>youtube-nocookie.com</code>).</li>
+  <li>it asks the YouTube Data API for public information about the video or playlist, such as
+      the list of videos in a playlist and their preview images;</li>
+  <li>when you press play, the video plays in YouTube's embedded player.</li>
 </ul>
-<p>When this happens, YouTube receives the usual information any website gets, such as your IP
-address and device type, and the video you asked for. This is covered by
-<a href="https://policies.google.com/privacy">Google's privacy policy</a>. The app does not
-contact YouTube unless a note contains a YouTube link.</p>
+<p>YouTube receives the information any website gets, such as your IP address and device type,
+and which video or playlist was asked for. The embedded player may store cookies or similar data
+on your device, as YouTube describes in its own policies.</p>
+<p>The app does not sign you in to YouTube and does not access your YouTube or Google account.
+The only YouTube information kept is the link you pasted and the video's preview image, saved
+inside your note on your device. Removing the video from the note, or deleting the note, removes
+them.</p>
 
 <h2>Purchases</h2>
 <p>Premium features are bought through Google Play. Google handles the payment; we never see
@@ -73,7 +79,7 @@ date. If a future version of the app starts collecting data (for example, an opt
 sync), this policy will be updated before that version is released.</p>
 
 <h2>Contact</h2>
-<p><a href="mailto:CONTACT_EMAIL">CONTACT_EMAIL</a></p>
+<p><a href="mailto:dru@dumbrava.ca">dru@dumbrava.ca</a></p>
 
 <footer><a href="./">8paper</a> · <a href="terms.html">Terms of use</a></footer>
 </main>
