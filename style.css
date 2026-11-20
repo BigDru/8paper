@@ -1,0 +1,19 @@
+:root { --bg: #0b0b0b; --fg: #ececec; --muted: #9a9a9a; --link: #ffffff; --rule: #2a2a2a; }
+@media (prefers-color-scheme: light) { :root { --bg: #fafafa; --fg: #161616; --muted: #555; --link: #000; --rule: #ddd; } }
+* { box-sizing: border-box; }
+body {
+  margin: 0; background: var(--bg); color: var(--fg);
+  background-image: radial-gradient(circle, color-mix(in srgb, var(--fg) 14%, transparent) 1px, transparent 1.5px);
+  background-size: 24px 24px;
+  font: 17px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+}
+main { max-width: 42rem; margin: 0 auto; padding: 3rem 16px 4rem; }
+h1 { font-size: 2rem; margin: 0 0 .25rem; letter-spacing: -.01em; }
+h2 { font-size: 1.15rem; margin: 2.2rem 0 .4rem; }
+p, li { margin: .5rem 0; }
+.muted { color: var(--muted); }
+a { color: var(--link); text-underline-offset: 3px; }
+nav { display: flex; gap: 1.25rem; margin-bottom: 2.5rem; font-size: .95rem; }
+nav a { text-decoration: none; color: var(--muted); }
+nav a:hover, nav a[aria-current] { color: var(--fg); }
+footer { margin-top: 3rem; padding-top: 1rem; border-top: 1px solid var(--rule); color: var(--muted); font-size: .9rem; }
